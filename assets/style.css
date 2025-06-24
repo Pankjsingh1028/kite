@@ -1,0 +1,127 @@
+
+:root {
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --background: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.dark-theme {
+    --background: #343a40;
+    --text-color: #f8f9fa;
+    --card-bg: #495057;
+}
+
+.dark-theme .card {
+    background-color: var(--card-bg);
+}
+
+.dark-theme .text-success {
+    color: #1e7e34;
+}
+
+.dark-theme .text-danger {
+    color: #c82333;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.shadow-sm:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background: linear-gradient(90deg, var(--primary-color), #0056b3);
+    color: white;
+    font-weight: 500;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+}
+
+.btn-oc {
+    min-width: 30px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.oc-table {
+    font-size: 14px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.oc-table thead th {
+    position: sticky;
+    top: 0;
+    background: var(--primary-color);
+    color: white;
+    z-index: 1;
+}
+
+.itm-call {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.itm-put {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.strike-col {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.form-control.is-valid {
+    border-color: var(--success-color);
+}
+
+.form-control.is-invalid {
+    border-color: var(--danger-color);
+}
+
+.btn:focus, .form-control:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .dbc-row > .col-md-5, .dbc-row > .col-md-7 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+}
